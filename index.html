@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--example of javscript diamond star pattern using "for nested loop." two trangle is made for diamond structure.upward and downward.-->
+    <script>
+        //this 'blank' variable stored  output of programe.made up of two main loop contain two inner loop in main loop.
+        let blank=""
+        //upward trangle
+        //first outer loop start ("A")
+        for(let i=1;i<=5;i++){
+            //inner loop (A.1)for include space in pattern.
+           for(let j=1;j<=5-i;++j){
+            blank+=" ";
+            
+        }
+        //inner loop (A.2) use for include "*" pattern.
+        for(k=1;k<=2*i-1;k++){
+            blank+="*";
+           }
+           //this is for programme start on new line.
+        blank+="\n";
+        }
+        //downward trangle:
+        //second outer loop start ("B")
+        for(let m=1;m<=4;m++){
+             //inner loop (B.1)for include space in pattern.
+           for(let n=1;n<=m;n++){
+            blank+=" ";
+            
+        }
+        //inner loop (A.2) use for include "*" pattern.
+        for(let o=1;o<=9-2*m;o++){
+            blank+="*";
+           }
+           blank+="\n";
+        }
+        //complete output outside the loop.print in console log.
+        console.log(blank);
+
+        
+        
+
+    </script>
+    
+</body>
+</html>
